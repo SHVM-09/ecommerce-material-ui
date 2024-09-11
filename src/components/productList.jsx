@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import ProductCard from "./ProductCard";
+import ProductCard from "./productCard";
 import FilterSort from "./filterSort";
 import { fetchProducts } from "../redux/productSlice";
 import { Box, Container } from "@mui/material";

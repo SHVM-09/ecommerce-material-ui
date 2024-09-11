@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartSlice"; // Adjust the path as needed
+import { addToCart } from "../redux/cartSlice";
 import { useParams } from "react-router-dom";
 import {
   Box,

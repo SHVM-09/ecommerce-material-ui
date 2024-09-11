@@ -20,10 +20,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 2 }}>
-      <CardActionArea
-        component={Link}
-        to={`/products/${product.id}`} // Link to product detail page
-      >
+      <CardActionArea component={Link} to={`/products/${product.id}`}>
         <CardMedia
           component="img"
           height="140"
@@ -42,7 +39,7 @@ const ProductCard = ({ product }) => {
       </CardActionArea>
       <Box sx={{ padding: 2 }}>
         <Button
-          variant="outlined" // Outline style button
+          variant="outlined"
           color="primary"
           onClick={handleAddToCart}
           sx={{ width: "100%" }}

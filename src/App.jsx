@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomeIntro from "./pages/HomeIntro";
 import Products from "./pages/Products";
-import ProductDetailPage from "./components/productDetailPage"; // Import ProductDetailPage
+import ProductDetailPage from "./components/productDetailPage";
 import Cart from "./pages/Cart";
 import CheckoutPage from "./components/checkoutPage";
 import Header from "./components/Header";
 import { useSelector } from "react-redux";
 
 const App = () => {
-  const products = useSelector((state) => state.products.filteredItems); // Adjust as needed
+  const products = useSelector((state) => state.products.filteredItems);
 
   return (
     <Router>
